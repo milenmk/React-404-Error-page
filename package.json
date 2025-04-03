@@ -8,7 +8,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && node copy-css.js",
     "prepublishOnly": "npm run build"
   },
   "keywords": [
@@ -27,6 +27,7 @@
     "react-router-dom": ">=6.0.0"
   },
   "devDependencies": {
+    "@types/node": "^18.0.0",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
     "typescript": "^4.9.5"

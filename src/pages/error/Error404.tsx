@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+
+// Import CSS styles
 import styles from './Error404.module.css';
 
 /**

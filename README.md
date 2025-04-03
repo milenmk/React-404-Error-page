@@ -5,7 +5,9 @@ A stylish and animated 404 error page for React applications with typewriter eff
 ## Installation
 
 ```bash
+
 npm install react-404-error-page
+
 # or
 yarn add react-404-error-page
 ```
