@@ -1,24 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-
-// Import CSS styles
 import styles from './Error404.module.css';
 
-/**
- * Error404 - A stylish 404 error page component with typewriter effect and countdown timer
- *
- * This component displays a terminal-style 404 error page with:
- * - Typewriter effect for error messages
- * - Countdown timer for automatic redirection
- * - "Go Back" button for manual navigation
- * - Random humorous error messages
- *
- * @returns React component
- */
 export const Error404 = () => {
     const navigate = useNavigate();
     const [countdown, setCountdown] = useState(10);
     const [randomMessage, setRandomMessage] = useState('');
+    // Removed blinkEffect state
     const [typedText, setTypedText] = useState('');
     const [showCursor, setShowCursor] = useState(true);
     const [isTypingComplete, setIsTypingComplete] = useState(false);
@@ -123,7 +111,7 @@ export const Error404 = () => {
         // Find the matching header and apply formatting
         for (const [prefix, text] of Object.entries(headerMap)) {
             if (line.startsWith(prefix)) {
-                return formattedLine.replace(text, `<span class="highlight">${text}</span>`);
+                return formattedLine.replace(text, `<span class="${styles.highlight}">${text}</span>`);
             }
         }
 
@@ -209,7 +197,7 @@ export const Error404 = () => {
                 {isTypingComplete && (
                     <>
                         <p className={styles.countdown}>Redirecting to home page in {countdown} seconds...</p>
-                        <button onClick={() => navigate(-1)} className={styles.backButton}>
+                        <button onClick={() => navigate(-1)} className={style{styles.backButto}>
                             Go Back
                         </button>
                     </>

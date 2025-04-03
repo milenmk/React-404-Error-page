@@ -1,1 +1,0 @@
-// This file is no longer used. See src/css-modules.d.ts instead.

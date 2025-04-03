@@ -54,12 +54,11 @@
 }
 
 .errorMessage span,
-.errorMessage :global(.highlight) {
+.highlight {
     color: #f0c674;
 }
 
-.errorMessage i,
-.errorMessage :global(i) {
+.errorMessage i {
     color: #8abeb7;
 }
 
@@ -71,8 +70,7 @@
     transition: color 0.3s;
 }
 
-.errorMessage b,
-.errorMessage :global(b) {
+.errorMessage b {
     color: #81a2be;
 }
 
@@ -140,4 +138,12 @@
 /* Make sure the cursor stays at the end of text */
 .typewriterContainer p:last-of-type {
     display: inline-block;
+}
+
+.terminalLine {
+    font-family: 'Share Tech Mono', monospace;
+    color: #f5f5f5;
+    margin: 0 0 20px;
+    font-size: 17px;
+    line-height: 1.2;
 }
