@@ -1,0 +1,32 @@
+# Source files
+src/
+
+# Development files
+.eslintrc
+.prettierrc
+tsconfig.json
+jest.config.js
+
+# Build tools
+webpack.config.js
+rollup.config.js
+
+# Tests
+__tests__/
+*.test.ts
+*.test.tsx
+*.spec.ts
+*.spec.tsx
+
+# Misc
+.github/
+.vscode/
+.idea/
+.DS_Store
+*.log
+node_modules/
+coverage/
+
+# Images and assets not needed for the package
+images/
+public/

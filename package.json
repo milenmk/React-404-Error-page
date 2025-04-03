@@ -1,0 +1,34 @@
+{
+  "name": "react-404-error-page",
+  "version": "1.0.0",
+  "description": "A stylish and animated 404 error page for React applications",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "react",
+    "404",
+    "error-page",
+    "not-found",
+    "typewriter",
+    "animation"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0",
+    "react-router-dom": ">=6.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "typescript": "^4.9.5"
+  }
+}

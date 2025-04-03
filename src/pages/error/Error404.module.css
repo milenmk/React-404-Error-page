@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono|Montserrat:700');
+
+.errorPage * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    color: inherit;
+}
+
+.errorPage {
+    background-image: linear-gradient(120deg, #4f0088 0%, #000000 100%);
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+.heading {
+    font-size: 45vw;
+    text-align: center;
+    position: fixed;
+    width: fit-content;
+    z-index: 1;
+    color: #ffffff26;
+    text-shadow: 0 0 50px rgba(0, 0, 0, 0.07);
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: 'Montserrat', monospace;
+}
+
+.errorMessage {
+    background: rgba(0, 0, 0, 0);
+    width: 70vw;
+    position: relative;
+    top: 50vh;
+    transform: translateY(-50%);
+    margin: 0 auto;
+    padding: 30px 30px 10px;
+    box-shadow: 0 0 150px -20px rgba(0, 0, 0, 0.5);
+    z-index: 3;
+}
+
+.errorMessage p {
+    font-family: 'Share Tech Mono', monospace;
+    color: #f5f5f5;
+    margin: 0 0 20px;
+    font-size: 17px;
+    line-height: 1.2;
+}
+
+.errorMessage span,
+.errorMessage :global(.highlight) {
+    color: #f0c674;
+}
+
+.errorMessage i,
+.errorMessage :global(i) {
+    color: #8abeb7;
+}
+
+.errorMessage a {
+    text-decoration: none;
+    margin: 0 10px;
+    color: #81a2be;
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+.errorMessage b,
+.errorMessage :global(b) {
+    color: #81a2be;
+}
+
+.errorMessage a:hover {
+    color: #f0c674;
+    text-decoration: none;
+}
+
+/* Removed blinking effect for 404 heading */
+
+.countdown {
+    font-size: 18px !important;
+    color: #f0c674 !important;
+    text-align: center;
+    margin-top: 30px !important;
+    font-weight: bold;
+}
+
+.backButton {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #8abeb7;
+    color: #000;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition:
+        background-color 0.3s,
+        transform 0.2s;
+}
+
+.backButton:hover {
+    background-color: #f0c674;
+    transform: scale(1.05);
+}
+
+/* Cursor for typewriter effect */
+.cursor {
+    display: inline-block;
+    font-weight: 100;
+    font-size: 20px;
+    color: #f0c674;
+    position: relative;
+    animation: cursor-blink 1s step-end infinite;
+}
+
+@keyframes cursor-blink {
+    0%,
+    100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+.typewriterContainer {
+    position: relative;
+    display: inline;
+}
+
+/* Make sure the cursor stays at the end of text */
+.typewriterContainer p:last-of-type {
+    display: inline-block;
+}
