@@ -54,11 +54,12 @@
 }
 
 .errorMessage span,
-.highlight {
+.errorMessage :global(.highlight) {
     color: #f0c674;
 }
 
-.errorMessage i {
+.errorMessage i,
+.errorMessage :global(i) {
     color: #8abeb7;
 }
 
@@ -66,11 +67,11 @@
     text-decoration: none;
     margin: 0 10px;
     color: #81a2be;
-    text-decoration: underline;
     transition: color 0.3s;
 }
 
-.errorMessage b {
+.errorMessage b,
+.errorMessage :global(b) {
     color: #81a2be;
 }
 
@@ -101,8 +102,8 @@
     border-radius: 4px;
     cursor: pointer;
     transition:
-        background-color 0.3s,
-        transform 0.2s;
+            background-color 0.3s,
+            transform 0.2s;
 }
 
 .backButton:hover {
@@ -138,12 +139,4 @@
 /* Make sure the cursor stays at the end of text */
 .typewriterContainer p:last-of-type {
     display: inline-block;
-}
-
-.terminalLine {
-    font-family: 'Share Tech Mono', monospace;
-    color: #f5f5f5;
-    margin: 0 0 20px;
-    font-size: 17px;
-    line-height: 1.2;
 }

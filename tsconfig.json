@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+        "target": "ES2020",
+        "module": "ESNext",
+        "jsx": "react",
+        "moduleResolution": "bundler",
+        "allowJs": true,
+        "declaration": true,
+        "outDir": "./dist",
+        "esModuleInterop": true,
+        "strict": true,
+        "noImplicitAny": true,
+        "isolatedModules": true,
+        "forceConsistentCasingInFileNames": true,
+        "resolveJsonModule": true
+    },
+    "exclude": [
+        "node_modules",
+        "dist"
+    ],
+    "hooks": [
+        "copy-files"
+    ],
+    "include": [
+        "src/**/*"
+    ]
+}

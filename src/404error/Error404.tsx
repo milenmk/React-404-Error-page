@@ -111,7 +111,7 @@ export const Error404 = () => {
         // Find the matching header and apply formatting
         for (const [prefix, text] of Object.entries(headerMap)) {
             if (line.startsWith(prefix)) {
-                return formattedLine.replace(text, `<span class="${styles.highlight}">${text}</span>`);
+                return formattedLine.replace(text, `<span class="highlight">${text}</span>`);
             }
         }
 
@@ -197,7 +197,7 @@ export const Error404 = () => {
                 {isTypingComplete && (
                     <>
                         <p className={styles.countdown}>Redirecting to home page in {countdown} seconds...</p>
-                        <button onClick={() => navigate(-1)} className={style{styles.backButto}>
+                        <button onClick={() => navigate(-1)} className={styles.backButton}>
                             Go Back
                         </button>
                     </>

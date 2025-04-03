@@ -1,0 +1,51 @@
+{
+  "name": "react-404-error-page",
+  "version": "1.1.0",
+  "description": "Fancy 404 error page with animation",
+  "keywords": [
+    "react",
+    "404",
+    "error"
+  ],
+  "author": {
+    "name": "Milen Karaganski",
+    "email": "info@minkov.dev",
+    "url": "https://minkov.dev"
+  },
+  "license": "ISC",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc && npm run copy-css",
+    "copy-css": "cp -r src/**/*.css dist/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/milenmk/React-404-Error-page.git"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.1",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-router-dom": "^7.4.1",
+    "tsc-hooks": "^1.1.2",
+    "typescript": "^5.8.2"
+  },
+  "peerDependencies": {
+    "react": "^19.0.0"
+  }
+}
